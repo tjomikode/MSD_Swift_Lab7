@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9DAE981825324EF80030C410 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9DAE981725324EF80030C410 /* README.md */; };
 		9DFAA220251D44E600ED54EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFAA21F251D44E600ED54EC /* AppDelegate.swift */; };
 		9DFAA222251D44E600ED54EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFAA221251D44E600ED54EC /* SceneDelegate.swift */; };
 		9DFAA224251D44E600ED54EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFAA223251D44E600ED54EC /* ViewController.swift */; };
@@ -17,7 +16,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9DAE981725324EF80030C410 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9DFAA21C251D44E600ED54EC /* MyUsefulApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyUsefulApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DFAA21F251D44E600ED54EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DFAA221251D44E600ED54EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,7 +40,6 @@
 		9DFAA213251D44E600ED54EC = {
 			isa = PBXGroup;
 			children = (
-				9DAE981725324EF80030C410 /* README.md */,
 				9DFAA21E251D44E600ED54EC /* MyUsefulApp */,
 				9DFAA21D251D44E600ED54EC /* Products */,
 			);
@@ -128,7 +125,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DFAA22C251D44E700ED54EC /* LaunchScreen.storyboard in Resources */,
-				9DAE981825324EF80030C410 /* README.md in Resources */,
 				9DFAA229251D44E700ED54EC /* Assets.xcassets in Resources */,
 				9DFAA227251D44E600ED54EC /* Main.storyboard in Resources */,
 			);
