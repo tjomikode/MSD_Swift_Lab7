@@ -78,12 +78,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         for i in parsedResult.Search {
             var imageFromAssets: UIImage
             if i.poster.count == 0 {
-                imageFromAssets = UIImage(named: "Poster_00")!
+                moviesArray.append(Movie(title: i.title, year: i.year, type: i.type))
             }
             else {
                 imageFromAssets = UIImage(named: "\(i.poster)")!
+                moviesArray.append(Movie(title: i.title, year: i.year, type: i.type, poster: imageFromAssets))
             }
-            moviesArray.append(Movie(title: i.title, year: i.year, type: i.type, poster: imageFromAssets))
         }
         return moviesArray
     }

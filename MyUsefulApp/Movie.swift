@@ -20,4 +20,10 @@ class Movie {
         self.type = type
         self.poster = poster
     }
+    
+    init(title: String, year: String, type:String) {
+        self.title = title
+        self.year = year
+        self.type = type
+    }
 }
