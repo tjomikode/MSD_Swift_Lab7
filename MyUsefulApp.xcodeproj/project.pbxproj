@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		9DAE981D253250BE0030C410 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9DAE981C253250BE0030C410 /* README.md */; };
 		9DAE98202532510A0030C410 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 9DAE981F2532510A0030C410 /* .gitignore */; };
+		9DC0C1D42556C0C900DF406F /* MoviesList.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9DC0C1D32556C0C900DF406F /* MoviesList.txt */; };
+		9DC0C1D72556C10800DF406F /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC0C1D62556C10800DF406F /* Movie.swift */; };
+		9DC0C1DE2556F05000DF406F /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC0C1DD2556F05000DF406F /* MovieTableViewCell.swift */; };
 		9DFAA220251D44E600ED54EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFAA21F251D44E600ED54EC /* AppDelegate.swift */; };
 		9DFAA222251D44E600ED54EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFAA221251D44E600ED54EC /* SceneDelegate.swift */; };
 		9DFAA224251D44E600ED54EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFAA223251D44E600ED54EC /* ViewController.swift */; };
@@ -20,6 +23,9 @@
 /* Begin PBXFileReference section */
 		9DAE981C253250BE0030C410 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9DAE981F2532510A0030C410 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		9DC0C1D32556C0C900DF406F /* MoviesList.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = MoviesList.txt; path = "../../../Downloads/Programming assignment 3/MoviesList.txt"; sourceTree = "<group>"; };
+		9DC0C1D62556C10800DF406F /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		9DC0C1DD2556F05000DF406F /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 		9DFAA21C251D44E600ED54EC /* MyUsefulApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyUsefulApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DFAA21F251D44E600ED54EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DFAA221251D44E600ED54EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +50,7 @@
 		9DFAA213251D44E600ED54EC = {
 			isa = PBXGroup;
 			children = (
+				9DC0C1D32556C0C900DF406F /* MoviesList.txt */,
 				9DAE981F2532510A0030C410 /* .gitignore */,
 				9DAE981C253250BE0030C410 /* README.md */,
 				9DFAA21E251D44E600ED54EC /* MyUsefulApp */,
@@ -69,6 +76,8 @@
 				9DFAA228251D44E700ED54EC /* Assets.xcassets */,
 				9DFAA22A251D44E700ED54EC /* LaunchScreen.storyboard */,
 				9DFAA22D251D44E700ED54EC /* Info.plist */,
+				9DC0C1D62556C10800DF406F /* Movie.swift */,
+				9DC0C1DD2556F05000DF406F /* MovieTableViewCell.swift */,
 			);
 			path = MyUsefulApp;
 			sourceTree = "<group>";
@@ -133,6 +142,7 @@
 				9DAE98202532510A0030C410 /* .gitignore in Resources */,
 				9DFAA22C251D44E700ED54EC /* LaunchScreen.storyboard in Resources */,
 				9DFAA229251D44E700ED54EC /* Assets.xcassets in Resources */,
+				9DC0C1D42556C0C900DF406F /* MoviesList.txt in Resources */,
 				9DAE981D253250BE0030C410 /* README.md in Resources */,
 				9DFAA227251D44E600ED54EC /* Main.storyboard in Resources */,
 			);
@@ -145,8 +155,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DC0C1DE2556F05000DF406F /* MovieTableViewCell.swift in Sources */,
 				9DFAA224251D44E600ED54EC /* ViewController.swift in Sources */,
 				9DFAA220251D44E600ED54EC /* AppDelegate.swift in Sources */,
+				9DC0C1D72556C10800DF406F /* Movie.swift in Sources */,
 				9DFAA222251D44E600ED54EC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
