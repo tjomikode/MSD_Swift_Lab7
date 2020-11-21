@@ -15,9 +15,7 @@ class MovieTableViewCell: UITableViewCell {
     @IBOutlet weak var typeLabel: UILabel!
     
     func addMovie(movie: Movie) {
-        if movie.poster != nil {
-            moviePosterView.image = movie.poster
-        }
+        moviePosterView.image = movie.poster
         movieTitleLabel.text = movie.title
         movieYearLabel.text = movie.year
         typeLabel.text = movie.type
