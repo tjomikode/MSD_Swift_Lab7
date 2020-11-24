@@ -52,10 +52,6 @@ class CellsDetailsViewController: UIViewController {
         describeRating.text = movieObjDescription?.imdbRating
         describePlot.text = movieObjDescription?.plot
     }
-    
-    override func viewWillLayoutSubviews() {
-        awardsText.sizeToFit()
-    }
 
     func parseImdbIDandCreateObjectMovie() -> Movie {
         let movie: Movie = Movie()

@@ -12,7 +12,15 @@
 		9DC0C1D42556C0C900DF406F /* MoviesList.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9DC0C1D32556C0C900DF406F /* MoviesList.txt */; };
 		9DC0C1D72556C10800DF406F /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC0C1D62556C10800DF406F /* Movie.swift */; };
 		9DC0C1DE2556F05000DF406F /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC0C1DD2556F05000DF406F /* MovieTableViewCell.swift */; };
+		9DC1E478256AAC6100BA5A33 /* ViewControllerImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC1E477256AAC6100BA5A33 /* ViewControllerImages.swift */; };
+		9DC1E47B256AB33800BA5A33 /* ImagesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC1E47A256AB33800BA5A33 /* ImagesCollectionViewCell.swift */; };
+		9DC1E47E256AB93000BA5A33 /* ImagesCollectionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC1E47D256AB93000BA5A33 /* ImagesCollectionLayout.swift */; };
+		9DC1E481256B17DE00BA5A33 /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC1E480256B17DE00BA5A33 /* AlertService.swift */; };
 		9DCC408D25646AD9004E40A4 /* AddingMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCC408C25646AD9004E40A4 /* AddingMovieViewController.swift */; };
+		9DD3DFB3256D5DCE00D39885 /* MyGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD3DFB2256D5DCE00D39885 /* MyGraphView.swift */; };
+		9DD3DFB7256D70BF00D39885 /* MyGraphControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD3DFB6256D70BF00D39885 /* MyGraphControllerView.swift */; };
+		9DD3DFBA256D760B00D39885 /* AxesDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD3DFB9256D760B00D39885 /* AxesDrawer.swift */; };
+		9DD3DFC0256DADD700D39885 /* MyChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD3DFBF256DADD700D39885 /* MyChartView.swift */; };
 		9DECE2E12562C5F90058BB4D /* CellsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DECE2E02562C5F90058BB4D /* CellsDetailsViewController.swift */; };
 		9DECE31E256304500058BB4D /* tt0121765.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9DECE315256304500058BB4D /* tt0121765.txt */; };
 		9DECE31F256304500058BB4D /* tt0121766.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9DECE316256304500058BB4D /* tt0121766.txt */; };
@@ -38,7 +46,15 @@
 		9DC0C1D32556C0C900DF406F /* MoviesList.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = MoviesList.txt; path = "../../../Downloads/Programming assignment 3/MoviesList.txt"; sourceTree = "<group>"; };
 		9DC0C1D62556C10800DF406F /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		9DC0C1DD2556F05000DF406F /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		9DC1E477256AAC6100BA5A33 /* ViewControllerImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerImages.swift; sourceTree = "<group>"; };
+		9DC1E47A256AB33800BA5A33 /* ImagesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesCollectionViewCell.swift; sourceTree = "<group>"; };
+		9DC1E47D256AB93000BA5A33 /* ImagesCollectionLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesCollectionLayout.swift; sourceTree = "<group>"; };
+		9DC1E480256B17DE00BA5A33 /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
 		9DCC408C25646AD9004E40A4 /* AddingMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingMovieViewController.swift; sourceTree = "<group>"; };
+		9DD3DFB2256D5DCE00D39885 /* MyGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGraphView.swift; sourceTree = "<group>"; };
+		9DD3DFB6256D70BF00D39885 /* MyGraphControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGraphControllerView.swift; sourceTree = "<group>"; };
+		9DD3DFB9256D760B00D39885 /* AxesDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AxesDrawer.swift; sourceTree = "<group>"; };
+		9DD3DFBF256DADD700D39885 /* MyChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyChartView.swift; sourceTree = "<group>"; };
 		9DECE2E02562C5F90058BB4D /* CellsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellsDetailsViewController.swift; sourceTree = "<group>"; };
 		9DECE315256304500058BB4D /* tt0121765.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tt0121765.txt; sourceTree = "<group>"; };
 		9DECE316256304500058BB4D /* tt0121766.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tt0121766.txt; sourceTree = "<group>"; };
@@ -122,6 +138,14 @@
 				9DECE2E02562C5F90058BB4D /* CellsDetailsViewController.swift */,
 				9DCC408C25646AD9004E40A4 /* AddingMovieViewController.swift */,
 				9DFAA22D251D44E700ED54EC /* Info.plist */,
+				9DC1E477256AAC6100BA5A33 /* ViewControllerImages.swift */,
+				9DC1E47A256AB33800BA5A33 /* ImagesCollectionViewCell.swift */,
+				9DC1E47D256AB93000BA5A33 /* ImagesCollectionLayout.swift */,
+				9DC1E480256B17DE00BA5A33 /* AlertService.swift */,
+				9DD3DFB2256D5DCE00D39885 /* MyGraphView.swift */,
+				9DD3DFB6256D70BF00D39885 /* MyGraphControllerView.swift */,
+				9DD3DFB9256D760B00D39885 /* AxesDrawer.swift */,
+				9DD3DFBF256DADD700D39885 /* MyChartView.swift */,
 			);
 			path = MyUsefulApp;
 			sourceTree = "<group>";
@@ -209,13 +233,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DC1E481256B17DE00BA5A33 /* AlertService.swift in Sources */,
 				9DECE2E12562C5F90058BB4D /* CellsDetailsViewController.swift in Sources */,
+				9DC1E47E256AB93000BA5A33 /* ImagesCollectionLayout.swift in Sources */,
 				9DC0C1DE2556F05000DF406F /* MovieTableViewCell.swift in Sources */,
+				9DD3DFC0256DADD700D39885 /* MyChartView.swift in Sources */,
+				9DC1E478256AAC6100BA5A33 /* ViewControllerImages.swift in Sources */,
+				9DD3DFB3256D5DCE00D39885 /* MyGraphView.swift in Sources */,
 				9DFAA224251D44E600ED54EC /* ViewController.swift in Sources */,
 				9DFAA220251D44E600ED54EC /* AppDelegate.swift in Sources */,
 				9DC0C1D72556C10800DF406F /* Movie.swift in Sources */,
 				9DFAA222251D44E600ED54EC /* SceneDelegate.swift in Sources */,
+				9DC1E47B256AB33800BA5A33 /* ImagesCollectionViewCell.swift in Sources */,
+				9DD3DFBA256D760B00D39885 /* AxesDrawer.swift in Sources */,
 				9DCC408D25646AD9004E40A4 /* AddingMovieViewController.swift in Sources */,
+				9DD3DFB7256D70BF00D39885 /* MyGraphControllerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

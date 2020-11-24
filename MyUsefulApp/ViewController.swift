@@ -13,24 +13,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         moviesArray.append(Movie(title: info1, year: info3, type: info2))
         filteredMoviesArray.append(Movie(title: info1, year: info3, type: info2))
         tableView.reloadData()
-        
-       //let movieObject = NSEntityDescription.insertNewObject(forEntityName: "Movie", into: context)
-      //  movieObject.setValue(info1, forKey: "title")
-      //  movieObject.setValue(info2, forKey: "type")
-     //   movieObject.setValue(info3, forKey: "year")
-      //  do {
-      //      try context.save()
-      //      print("saved")
-      //  } catch  {
-      //      print("failed saving :(")
-       // }
     }
-    
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
-    
-    //let context = (UIApplication.shared.delegate as! //AppDelegate).persistentContainer.viewContext
     
     var moviesArray: [Movie] = []
     var filteredMoviesArray: [Movie] = []
@@ -50,9 +36,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         // hide keyboard while scrolling UITableView
         tableView.keyboardDismissMode = .onDrag
-        
-        // save data to Core Data
-        
     }
     
     /* Keyboard dismiss */
@@ -97,55 +80,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         let deleteAction = UITableViewRowAction(style: .destructive, title: "Delete") {
             _, indexPath in
-            /*
-            for objectToDeleteFromMoviesArray in self.moviesArray {
-                if objectToDeleteFromMoviesArray.title! == self.filteredMoviesArray[indexPath.row].title! {
-                    self.moviesArray.removeAll(where: { $0.})
-                }
-            }*/
             
             let varTemp: String = self.filteredMoviesArray[indexPath.row].title!
             
-            /*print("FILTERED")
-            for i in self.filteredMoviesArray {
-                print(i.title!)
-                print()
-            }
-            print(self.filteredMoviesArray.count)
-            print("DELETING NEXT ELEMENT")
-            print(self.filteredMoviesArray[indexPath.row].title!)*/
-            
             self.filteredMoviesArray.remove(at: indexPath.row)
             
-            
-            /*print("MOVIES")
-            for i in self.moviesArray {
-                print()
-                print(i.title!)
-                print()
-            }
-            
-            print(self.moviesArray.count)
-            print()
-            print("DELETENIG NEXT ELEMNT")
-            print(self.moviesArray[indexPath.row].title!)
-            print("uuuuuuu")
-            print(varTemp)*/
             self.moviesArray.removeAll(where: { $0.title == varTemp})
             
             tableView.deleteRows(at: [indexPath], with: .automatic)
             tableView.reloadData()
             
-            /*print("FILTERED")
-            for i in self.filteredMoviesArray {
-                print(i.title!)
-                print()
-            }
-            print("MOVIES")
-            for i in self.moviesArray {
-                print(i.title!)
-                print()
-            }*/
         }
         return [deleteAction]
     }
@@ -172,14 +116,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             let secondViewController = segue.destination as! AddingMovieViewController
             secondViewController.delegate = self
         }
-    }
-    
-    func saveData() {
-        
-    }
-    
-    func loadData() {
-        
     }
     
     func parseFileAndCreateArray() -> [Movie] {
