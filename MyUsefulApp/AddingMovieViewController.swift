@@ -12,10 +12,12 @@ protocol DataEnteredDelegate: class {
     func userEnterInfo(info1: String, info2: String, info3: String)
 }
 
-class AddingMovieViewController: UIViewController {
+class AddingMovieViewController: UIViewController, UITextFieldDelegate {
     
     weak var delegate: DataEnteredDelegate? = nil
     
+    
+    @IBOutlet weak var buttonAddMovie: UIButton!
     @IBOutlet weak var titleNewMovie: UITextField!
     @IBOutlet weak var typeNewMovie: UITextField!
     @IBOutlet weak var yearNewMovie: UITextField!
@@ -28,6 +30,10 @@ class AddingMovieViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        buttonAddMovie.isEnabled = false
+        titleNewMovie.delegate = self
+        typeNewMovie.delegate = self
+        yearNewMovie.delegate = self
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -37,5 +43,16 @@ class AddingMovieViewController: UIViewController {
         super.touchesBegan(touches, with: event)
     }
     
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        let title = titleNewMovie.text ?? ""
+        let year = yearNewMovie.text ?? ""
+        let type = typeNewMovie.text ?? ""
+        buttonAddMovie.isEnabled = !title.isEmpty && !year.isEmpty && !type.isEmpty && Int(year) != nil
+        return true
+    }
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
 }

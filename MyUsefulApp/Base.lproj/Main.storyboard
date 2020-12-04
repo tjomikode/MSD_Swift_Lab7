@@ -245,7 +245,7 @@
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="continue"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tet-wd-adP">
-                                <rect key="frame" x="126" y="394.5" width="162" height="56"/>
+                                <rect key="frame" x="20" y="394.5" width="374" height="56"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="vDo-qa-kXy"/>
                                 </constraints>
@@ -276,13 +276,14 @@
                             <constraint firstItem="uXg-r4-BwD" firstAttribute="trailing" secondItem="6wu-bU-qBN" secondAttribute="trailingMargin" id="cw8-Ck-fq4"/>
                             <constraint firstItem="uXg-r4-BwD" firstAttribute="top" secondItem="RK2-GD-4oR" secondAttribute="top" id="dfS-sU-a8C"/>
                             <constraint firstItem="T6O-yx-fSp" firstAttribute="trailing" secondItem="bdD-GL-axl" secondAttribute="trailing" id="kb8-8u-zdt"/>
-                            <constraint firstItem="Tet-wd-adP" firstAttribute="leading" secondItem="RK2-GD-4oR" secondAttribute="leading" constant="126" id="oA2-fy-obg"/>
+                            <constraint firstItem="Tet-wd-adP" firstAttribute="leading" secondItem="RK2-GD-4oR" secondAttribute="leading" constant="20" id="oA2-fy-obg"/>
                             <constraint firstItem="j9F-aO-EkK" firstAttribute="leading" secondItem="uXg-r4-BwD" secondAttribute="leading" id="rx7-JT-Dm1"/>
                             <constraint firstItem="Tet-wd-adP" firstAttribute="top" secondItem="TaS-tj-WyJ" secondAttribute="bottom" constant="21" id="xR7-eD-8n7"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="zr8-CK-Ha7"/>
                     <connections>
+                        <outlet property="buttonAddMovie" destination="Tet-wd-adP" id="wOY-eo-Ppo"/>
                         <outlet property="titleNewMovie" destination="j9F-aO-EkK" id="Bgs-kX-X1I"/>
                         <outlet property="typeNewMovie" destination="T6O-yx-fSp" id="rqm-rt-fFh"/>
                         <outlet property="yearNewMovie" destination="TaS-tj-WyJ" id="p5K-UH-dO5"/>
@@ -290,7 +291,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q89-mL-ioZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3616" y="-1540"/>
+            <point key="canvasLocation" x="3615.9420289855075" y="-1540.1785714285713"/>
         </scene>
         <!--Movie Details-->
         <scene sceneID="3A8-9d-RFx">
@@ -572,9 +573,11 @@
                                             <constraint firstItem="tpQ-gQ-hRx" firstAttribute="leading" secondItem="x5P-Dm-Ido" secondAttribute="leading" id="CVL-73-Xro"/>
                                             <constraint firstItem="qJs-Uh-Huq" firstAttribute="top" secondItem="Kb8-SD-Xip" secondAttribute="bottom" constant="8.5" id="Clc-Id-vaP"/>
                                             <constraint firstItem="GpI-x4-y46" firstAttribute="trailing" secondItem="HdT-qd-JKL" secondAttribute="trailing" id="DAj-BE-mZn"/>
+                                            <constraint firstAttribute="bottom" secondItem="qJs-Uh-Huq" secondAttribute="bottom" constant="54.5" id="DQJ-Cx-Umm"/>
                                             <constraint firstItem="pgD-6q-FDi" firstAttribute="leading" secondItem="Xgw-4n-Afw" secondAttribute="leading" id="Fl4-X4-o1h"/>
                                             <constraint firstItem="afg-n1-knr" firstAttribute="baseline" secondItem="aEx-sS-ktq" secondAttribute="baseline" id="FwN-e2-nTM"/>
                                             <constraint firstItem="Xgw-4n-Afw" firstAttribute="leading" secondItem="tpQ-gQ-hRx" secondAttribute="leading" id="GeH-hl-bSl"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="750" id="Gm7-9L-lN8"/>
                                             <constraint firstItem="Jsa-11-xnK" firstAttribute="leading" secondItem="NAT-LY-mzg" secondAttribute="leading" id="H19-XG-9WB"/>
                                             <constraint firstItem="W6R-ij-Ki4" firstAttribute="baseline" secondItem="GpI-x4-y46" secondAttribute="baseline" id="JcH-DA-oIg"/>
                                             <constraint firstItem="NAT-LY-mzg" firstAttribute="baseline" secondItem="blx-8L-maZ" secondAttribute="baseline" id="Jkk-Ke-cD9"/>
@@ -638,6 +641,7 @@
                                             <constraint firstItem="016-gW-UOK" firstAttribute="top" secondItem="4kZ-nw-QsX" secondAttribute="top" id="ncu-Hc-F9n"/>
                                             <constraint firstItem="Kb8-SD-Xip" firstAttribute="top" secondItem="pSP-f8-FKk" secondAttribute="bottom" constant="8" symbolic="YES" id="oFk-2f-Ghp"/>
                                             <constraint firstItem="Ohp-KZ-BEk" firstAttribute="trailing" secondItem="qUI-2z-bDi" secondAttribute="trailing" id="pGT-zI-v4u"/>
+                                            <constraint firstAttribute="height" constant="750" id="pI5-SB-Rst"/>
                                             <constraint firstItem="aEx-sS-ktq" firstAttribute="leading" secondItem="HdT-qd-JKL" secondAttribute="leading" id="pSi-nd-NZy"/>
                                             <constraint firstItem="Jsa-11-xnK" firstAttribute="leading" secondItem="4kZ-nw-QsX" secondAttribute="leadingMargin" id="rgf-3b-FyX"/>
                                             <constraint firstItem="WVr-e0-hIy" firstAttribute="baseline" secondItem="Kb8-SD-Xip" secondAttribute="baseline" id="tes-oR-YIo"/>
@@ -652,6 +656,9 @@
                                         </constraints>
                                         <variation key="default">
                                             <mask key="constraints">
+                                                <exclude reference="Gm7-9L-lN8"/>
+                                                <exclude reference="foU-FN-r4u"/>
+                                                <exclude reference="pI5-SB-Rst"/>
                                                 <exclude reference="TC5-Ci-Xex"/>
                                                 <exclude reference="l6X-S2-wOY"/>
                                                 <exclude reference="w7F-Hv-Tvh"/>
@@ -762,44 +769,7 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fpv-4f-MIu" customClass="MyChartView" customModule="MyUsefulApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="100" width="414" height="708"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yellow Progress" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SVg-9d-Yeu">
-                                        <rect key="frame" x="8" y="654" width="396" height="25"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="25" id="3QF-rQ-zM6"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Red Progress" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ytK-qT-VNy">
-                                        <rect key="frame" x="8" y="687" width="396" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Green Progress" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mZp-In-gms">
-                                        <rect key="frame" x="8" y="623" width="396" height="23"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="23" id="IZu-jO-lQH"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstItem="SVg-9d-Yeu" firstAttribute="trailing" secondItem="ytK-qT-VNy" secondAttribute="trailing" id="3s8-7o-9pQ"/>
-                                    <constraint firstAttribute="trailing" secondItem="mZp-In-gms" secondAttribute="trailing" constant="10" id="CDg-Ng-amp"/>
-                                    <constraint firstItem="mZp-In-gms" firstAttribute="leading" secondItem="SVg-9d-Yeu" secondAttribute="leading" id="Egn-Jd-hdD"/>
-                                    <constraint firstItem="SVg-9d-Yeu" firstAttribute="top" secondItem="mZp-In-gms" secondAttribute="bottom" constant="8" id="N1k-UT-RMz"/>
-                                    <constraint firstItem="mZp-In-gms" firstAttribute="trailing" secondItem="SVg-9d-Yeu" secondAttribute="trailing" id="cMu-Iu-jHl"/>
-                                    <constraint firstItem="ytK-qT-VNy" firstAttribute="top" secondItem="SVg-9d-Yeu" secondAttribute="bottom" constant="8" id="gpk-ER-uU9"/>
-                                    <constraint firstAttribute="bottom" secondItem="ytK-qT-VNy" secondAttribute="bottom" constant="0.5" id="gtY-2u-5db"/>
-                                    <constraint firstItem="mZp-In-gms" firstAttribute="leading" secondItem="Fpv-4f-MIu" secondAttribute="leadingMargin" id="nbF-V6-mQ5"/>
-                                    <constraint firstItem="SVg-9d-Yeu" firstAttribute="leading" secondItem="ytK-qT-VNy" secondAttribute="leading" id="pXm-9p-sz1"/>
-                                </constraints>
                             </view>
                             <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="p1h-tx-qPH" customClass="MyGraphView" customModule="MyUsefulApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="85" width="414" height="728"/>
@@ -842,9 +812,6 @@
                         </segmentedControl>
                     </navigationItem>
                     <connections>
-                        <outlet property="labelGreenProgress" destination="mZp-In-gms" id="7wR-BP-FyK"/>
-                        <outlet property="labelRedProgress" destination="ytK-qT-VNy" id="74l-Tr-Izh"/>
-                        <outlet property="labelYellowProgress" destination="SVg-9d-Yeu" id="hMt-Z6-UK2"/>
                         <outlet property="segmentedControl" destination="xXA-RD-tyz" id="XJR-VI-aWx"/>
                         <outlet property="viewChart" destination="Fpv-4f-MIu" id="5oh-7R-OQE"/>
                         <outlet property="viewGraph" destination="p1h-tx-qPH" id="yWj-YV-uir"/>

@@ -23,9 +23,6 @@ class MyGraphControllerView: UIViewController {
         refreshGraph() } }
     
     @IBOutlet weak var viewChart: MyChartView!
-    @IBOutlet weak var labelGreenProgress: UILabel!
-    @IBOutlet weak var labelYellowProgress: UILabel!
-    @IBOutlet weak var labelRedProgress: UILabel!
     
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     
@@ -37,12 +34,14 @@ class MyGraphControllerView: UIViewController {
         case 1:
             viewGraph.isHidden = true
             viewChart.isHidden = false
-            labelGreenProgress.text = "\(Int(viewChart.progressGreen))%"
-            labelGreenProgress.textColor = UIColor.green
-            labelYellowProgress.text = "\(Int(viewChart.progressYellow))%"
-            labelYellowProgress.textColor = UIColor.yellow
-            labelRedProgress.text = "\(Int(viewChart.progressRed))%"
-            labelRedProgress.textColor = UIColor.red
+            let attributesRedProgress: [NSAttributedString.Key: Any] = [.foregroundColor: UIColor.red]
+            let attributesGreenProgress: [NSAttributedString.Key: Any] = [.foregroundColor: UIColor.green]
+            let attributesYellow: [NSAttributedString.Key: Any] = [.foregroundColor: UIColor.yellow]
+            let firstString = NSMutableAttributedString(string: "\(Int(viewChart.progressRed))% ", attributes: attributesRedProgress)
+            let secondString = NSAttributedString(string: "\(Int(viewChart.progressGreen))% ", attributes: attributesGreenProgress)
+            let thirdString = NSAttributedString(string: "\(Int(viewChart.progressYellow))%", attributes: attributesYellow)
+            firstString.append(secondString)
+            firstString.append(thirdString)
         default:
             break
         }
