@@ -14,6 +14,7 @@ class Movie {
     var year: String?
     var type: String?
     var poster: UIImage?
+    var posterURL: String?
     var rated: String?
     var released: String?
     var runtime: String?
@@ -30,11 +31,12 @@ class Movie {
     var production: String?
     var imdbID: String?
     
-    init(title: String = "", year: String = "", type: String = "", poster: UIImage = UIImage(), imdbID: String = "") {
+    init(title: String = "", year: String = "", type: String = "", poster: UIImage = UIImage(), posterURL: String = "", imdbID: String = "") {
         self.title = title
         self.year = year
         self.type = type
         self.poster = poster
         self.imdbID = imdbID
+        self.posterURL = posterURL
     }
 }

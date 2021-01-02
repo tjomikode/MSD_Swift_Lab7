@@ -14,10 +14,11 @@ class MovieTableViewCell: UITableViewCell {
     @IBOutlet weak var movieYearLabel: UILabel!
     @IBOutlet weak var typeLabel: UILabel!
     
-    func addMovie(movie: Movie) {
-        moviePosterView.image = movie.poster
-        movieTitleLabel.text = movie.title
-        movieYearLabel.text = movie.year
-        typeLabel.text = movie.type
+    override class func awakeFromNib() {
+        super.awakeFromNib()
+    }
+    
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
     }
 }
